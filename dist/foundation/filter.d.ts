@@ -1,0 +1,1 @@
+export declare function filter<T>(fn:(value: T, index: number, array: T[]) => boolean, users: T[]): T[];

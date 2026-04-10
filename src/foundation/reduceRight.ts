@@ -1,4 +1,4 @@
-export function reduce<T, U>(
+export function reduceRight<T, U>(
 reducer: (acc: U, value: T, index: number) => U,
 initial: U,
 arr: T[]
@@ -7,7 +7,7 @@ if (!Array.isArray(arr)) throw new TypeError("Expected array");
 
 let acc = initial;
 
-for (let i = 0; i < arr.length; i++) {
+for (let i = arr.length - 1; i >= 0; i--) {
 acc = reducer(acc, arr[i], i);
 }
 
