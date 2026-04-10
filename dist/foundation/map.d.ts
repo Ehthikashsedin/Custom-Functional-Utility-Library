@@ -1,1 +1,0 @@
-export declare function map<T, U>(fn: (value: T, index: number, array: T[]) => U, nums: T[]): U[];
