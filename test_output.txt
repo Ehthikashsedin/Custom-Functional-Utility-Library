@@ -1,0 +1,131 @@
+PASS tests/foundation/some.test.ts (8.739 s)
+PASS tests/foundation/every.test.ts (8.728 s)
+FAIL tests/optics/view.test.ts
+  ● Test suite failed to run
+
+    [96mtests/optics/view.test.ts[0m:[93m14[0m:[93m20[0m - [91merror[0m[90m TS2345: [0mArgument of type 'any' is not assignable to parameter of type 'never'.
+
+    [7m14[0m     const l = lens("user.profile.name" as any);
+    [7m  [0m [91m                   ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtests/optics/view.test.ts[0m:[93m19[0m:[93m20[0m - [91merror[0m[90m TS2345: [0mArgument of type 'any' is not assignable to parameter of type 'never'.
+
+    [7m19[0m     const l = lens("user.profile.age" as any);
+    [7m  [0m [91m                   ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtests/optics/view.test.ts[0m:[93m24[0m:[93m20[0m - [91merror[0m[90m TS2345: [0mArgument of type 'any' is not assignable to parameter of type 'never'.
+
+    [7m24[0m     const l = lens("user.missing.name" as any);
+    [7m  [0m [91m                   ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+FAIL tests/optics/lens.test.ts
+  ● Test suite failed to run
+
+    [96mtests/optics/lens.test.ts[0m:[93m5[0m:[93m20[0m - [91merror[0m[90m TS2345: [0mArgument of type 'any' is not assignable to parameter of type 'never'.
+
+    [7m5[0m     const l = lens("user.profile.name" as any);
+    [7m [0m [91m                   ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+FAIL tests/foundation/reduceRight.test.ts
+  ● Test suite failed to run
+
+    [96mtests/foundation/reduceRight.test.ts[0m:[93m19[0m:[93m50[0m - [91merror[0m[90m TS18046: [0m'val' is of type 'unknown'.
+
+    [7m19[0m     expect(() => reduceRight((acc, val) => acc + val, 0, null as any)).toThrow(TypeError);
+    [7m  [0m [91m                                                 ~~~[0m
+
+FAIL tests/foundation/reduce.test.ts
+  ● Test suite failed to run
+
+    [96mtests/foundation/reduce.test.ts[0m:[93m19[0m:[93m45[0m - [91merror[0m[90m TS18046: [0m'val' is of type 'unknown'.
+
+    [7m19[0m     expect(() => reduce((acc, val) => acc + val, 0, "not_array" as any)).toThrow(TypeError);
+    [7m  [0m [91m                                            ~~~[0m
+
+FAIL tests/foundation/filter.test.ts
+  ● Test suite failed to run
+
+    [96mtests/foundation/filter.test.ts[0m:[93m18[0m:[93m32[0m - [91merror[0m[90m TS18046: [0m'x' is of type 'unknown'.
+
+    [7m18[0m     expect(() => filter((x) => x > 2, undefined as any)).toThrow(TypeError);
+    [7m  [0m [91m                               ~[0m
+
+FAIL tests/search/find.test.ts
+  ● Test suite failed to run
+
+    [96mtests/search/find.test.ts[0m:[93m38[0m:[93m22[0m - [91merror[0m[90m TS2345: [0mArgument of type '"id"' is not assignable to parameter of type 'never'.
+
+    [7m38[0m     expect(find(arr, "id", 1)).toEqual({ id: 1 });
+    [7m  [0m [91m                     ~~~~[0m
+
+      [96msrc/search/find.ts[0m:[93m20[0m:[93m17[0m
+        [7m20[0m export function find<T>(
+        [7m  [0m [96m                ~~~~[0m
+        The call would have succeeded against this implementation, but implementation signatures of overloads are not externally visible.
+
+FAIL tests/foundation/map.test.ts
+  ● Test suite failed to run
+
+    [96mtests/foundation/map.test.ts[0m:[93m18[0m:[93m29[0m - [91merror[0m[90m TS18046: [0m'x' is of type 'unknown'.
+
+    [7m18[0m     expect(() => map((x) => x * 2, null as any)).toThrow(TypeError);
+    [7m  [0m [91m                            ~[0m
+    [96mtests/foundation/map.test.ts[0m:[93m19[0m:[93m29[0m - [91merror[0m[90m TS18046: [0m'x' is of type 'unknown'.
+
+    [7m19[0m     expect(() => map((x) => x * 2, {} as any)).toThrow(TypeError);
+    [7m  [0m [91m                            ~[0m
+
+FAIL tests/optics/set.test.ts
+  ● Test suite failed to run
+
+    [96mtests/optics/set.test.ts[0m:[93m16[0m:[93m20[0m - [91merror[0m[90m TS2345: [0mArgument of type 'any' is not assignable to parameter of type 'never'.
+
+    [7m16[0m     const l = lens("user.profile.name" as any);
+    [7m  [0m [91m                   ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtests/optics/set.test.ts[0m:[93m17[0m:[93m28[0m - [91merror[0m[90m TS2345: [0mArgument of type '"NewName"' is not assignable to parameter of type 'never'.
+
+    [7m17[0m     const updated = set(l, "NewName", data);
+    [7m  [0m [91m                           ~~~~~~~~~[0m
+    [96mtests/optics/set.test.ts[0m:[93m19[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'updated' is of type 'unknown'.
+
+    [7m19[0m     expect(updated.user.profile.name).toBe("NewName");
+    [7m  [0m [91m           ~~~~~~~[0m
+    [96mtests/optics/set.test.ts[0m:[93m21[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'updated' is of type 'unknown'.
+
+    [7m21[0m     expect(updated.active).toBe(true); // Other branches intact
+    [7m  [0m [91m           ~~~~~~~[0m
+    [96mtests/optics/set.test.ts[0m:[93m23[0m:[93m12[0m - [91merror[0m[90m TS18046: [0m'updated' is of type 'unknown'.
+
+    [7m23[0m     expect(updated.user).not.toBe(data.user); // New intermediate ref
+    [7m  [0m [91m           ~~~~~~~[0m
+    [96mtests/optics/set.test.ts[0m:[93m32[0m:[93m20[0m - [91merror[0m[90m TS2345: [0mArgument of type 'any' is not assignable to parameter of type 'never'.
+
+    [7m32[0m     const l = lens("user.missing.id" as any);
+    [7m  [0m [91m                   ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    [96mtests/optics/set.test.ts[0m:[93m33[0m:[93m33[0m - [91merror[0m[90m TS2345: [0mArgument of type '42' is not assignable to parameter of type 'never'.
+
+    [7m33[0m     const updated: any = set(l, 42, data);
+    [7m  [0m [91m                                ~~[0m
+
+FAIL tests/extraction/pluck.test.ts
+  ● Test suite failed to run
+
+    [96mtests/extraction/pluck.test.ts[0m:[93m32[0m:[93m24[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+      Overload 1 of 3, '(keys: never[], arr: unknown[]): Pick<unknown, never>[]', gave the following error.
+        Argument of type 'string' is not assignable to parameter of type 'never[]'.
+      Overload 2 of 3, '(path: never, arr: unknown[]): never[]', gave the following error.
+        Argument of type '"id"' is not assignable to parameter of type 'never'.
+      Overload 3 of 3, '(key: never, arr: unknown[]): never[]', gave the following error.
+        Argument of type '"id"' is not assignable to parameter of type 'never'.
+
+    [7m32[0m     expect(() => pluck("id", {} as any)).toThrow(TypeError);
+    [7m  [0m [91m                       ~~~~[0m
+
+      [96msrc/extraction/pluck.ts[0m:[93m19[0m:[93m17[0m
+        [7m19[0m export function pluck<T>(
+        [7m  [0m [96m                ~~~~~[0m
+        The call would have succeeded against this implementation, but implementation signatures of overloads are not externally visible.
+
+Test Suites: 9 failed, 2 passed, 11 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        13.598 s
+Ran all test suites.

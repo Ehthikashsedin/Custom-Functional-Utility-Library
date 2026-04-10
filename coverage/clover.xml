@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1775794880088" clover="3.2.0">
+  <project timestamp="1775794880088" name="All files">
+    <metrics statements="84" coveredstatements="84" conditionals="55" coveredconditionals="55" methods="13" coveredmethods="13" elements="152" coveredelements="152" complexity="0" loc="84" ncloc="84" packages="4" files="11" classes="11"/>
+    <package name="extraction">
+      <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <file name="pluck.ts" path="/Users/ehthikash/Desktop/typescipt/customUtil/src/extraction/pluck.ts">
+        <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="8" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="14" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="23" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="5" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="28" count="8" type="stmt"/>
+        <line num="30" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="42" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="foundation">
+      <metrics statements="36" coveredstatements="36" conditionals="18" coveredconditionals="18" methods="6" coveredmethods="6"/>
+      <file name="every.ts" path="/Users/ehthikash/Desktop/typescipt/customUtil/src/foundation/every.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="2" type="stmt"/>
+      </file>
+      <file name="filter.ts" path="/Users/ehthikash/Desktop/typescipt/customUtil/src/foundation/filter.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+      <file name="map.ts" path="/Users/ehthikash/Desktop/typescipt/customUtil/src/foundation/map.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+      <file name="reduce.ts" path="/Users/ehthikash/Desktop/typescipt/customUtil/src/foundation/reduce.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+      </file>
+      <file name="reduceRight.ts" path="/Users/ehthikash/Desktop/typescipt/customUtil/src/foundation/reduceRight.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+      </file>
+      <file name="some.ts" path="/Users/ehthikash/Desktop/typescipt/customUtil/src/foundation/some.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="optics">
+      <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
+      <file name="lens.ts" path="/Users/ehthikash/Desktop/typescipt/customUtil/src/optics/lens.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+      </file>
+      <file name="set.ts" path="/Users/ehthikash/Desktop/typescipt/customUtil/src/optics/set.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="5" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+      </file>
+      <file name="view.ts" path="/Users/ehthikash/Desktop/typescipt/customUtil/src/optics/view.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="search">
+      <metrics statements="16" coveredstatements="16" conditionals="23" coveredconditionals="23" methods="1" coveredmethods="1"/>
+      <file name="find.ts" path="/Users/ehthikash/Desktop/typescipt/customUtil/src/search/find.ts">
+        <metrics statements="16" coveredstatements="16" conditionals="23" coveredconditionals="23" methods="1" coveredmethods="1"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="25" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="8" type="stmt"/>
+        <line num="29" count="21" type="stmt"/>
+        <line num="32" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="16" type="cond" truecount="4" falsecount="0"/>
+        <line num="37" count="8" type="cond" truecount="4" falsecount="0"/>
+        <line num="40" count="8" type="cond" truecount="5" falsecount="0"/>
+        <line num="41" count="5" type="stmt"/>
+        <line num="42" count="5" type="stmt"/>
+        <line num="43" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="48" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="4" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

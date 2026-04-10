@@ -15,3 +15,13 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./foundation/map"), exports);
+__exportStar(require("./foundation/filter"), exports);
+__exportStar(require("./foundation/reduce"), exports);
+__exportStar(require("./foundation/reduceRight"), exports);
+__exportStar(require("./foundation/some"), exports);
+__exportStar(require("./foundation/every"), exports);
+__exportStar(require("./search/find"), exports);
+__exportStar(require("./extraction/pluck"), exports);
+__exportStar(require("./optics/lens"), exports);
+__exportStar(require("./optics/view"), exports);
+__exportStar(require("./optics/set"), exports);

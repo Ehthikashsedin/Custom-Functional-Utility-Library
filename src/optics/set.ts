@@ -1,12 +1,23 @@
-export function set(path: string[], value: any, obj: any): any {
-if (path.length === 0) return value;
+import { Path, PathValue } from "../utils/types";
+import { Lens } from "./lens";
 
-const [key, ...rest] = path;
+function setInPath(keys: string[], value: any, obj: any): any {
+  if (keys.length === 0) return value;
 
-return {
-...obj,
-[key]: rest.length
-? set(rest, value, obj[key] || {})
-: value
-};
+  const [key, ...rest] = keys;
+
+  return {
+    ...obj,
+    [key]: rest.length
+      ? setInPath(rest, value, obj ? obj[key] : {})
+      : value
+  };
+}
+
+export function set<T, P extends Path<T>>(
+  lens: Lens<T, P>,
+  value: PathValue<T, P>,
+  obj: T
+): T {
+  return setInPath(lens.keys, value, obj) as T;
 }

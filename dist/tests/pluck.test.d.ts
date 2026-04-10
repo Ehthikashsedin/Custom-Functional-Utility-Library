@@ -1,1 +1,1 @@
-export {};
+declare const pluck: any;
