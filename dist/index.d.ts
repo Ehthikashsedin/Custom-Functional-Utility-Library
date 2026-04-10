@@ -1,7 +1,11 @@
-export { map } from "./map";
-export { filter } from "./filter"
-export { some } from "./some"
-export { every } from "./every"
-export { search } from "./search"
-export { reduce } from "./reduce"
-export { reduceRight } from "./reduceRight"
+export { map } from "./foundation/map";
+export { filter } from "./foundation/filter"
+export { some } from "./foundation/some"
+export { every } from "./foundation/every"
+export { search } from "./search/find"
+export { reduce } from "./foundation/reduce"
+export { reduceRight } from "./foundation/reduceRight"
+export { pluck } from "./extraction/pluck"
+export * from "./optics/lens"
+export * from "./optics/set"
+export * from "./optics/view"
