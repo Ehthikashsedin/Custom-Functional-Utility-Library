@@ -1,16 +1,12 @@
-export function filter<T>(
+export function every<T>(
 predicate: (value: T, index: number) => boolean,
 arr: T[]
-): T[] {
+): boolean {
 if (!Array.isArray(arr)) throw new TypeError("Expected array");
 
-const result: T[] = [];
-
 for (let i = 0; i < arr.length; i++) {
-if (predicate(arr[i], i)) {
-result[result.length] = arr[i];
-}
+if (!predicate(arr[i], i)) return false;
 }
 
-return result;
+return true;
 }
