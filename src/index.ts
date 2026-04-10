@@ -1,7 +1,0 @@
-export { map } from "./foundation/map"
-export { filter } from "./foundation/filter"
-export { some } from "./foundation/some"
-export { every } from "./foundation/every"
-export { search } from "./search/find"
-export { reduce } from "./foundation/reduce"
-export { reduceRight } from "./foundation/reduceRight"

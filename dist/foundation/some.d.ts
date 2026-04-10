@@ -1,1 +1,0 @@
-export declare function some<T>(fn: (value: T, index: number, array: T[]) => boolean, users: T[]): boolean;
